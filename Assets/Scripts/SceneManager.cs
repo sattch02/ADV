@@ -1,12 +1,12 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class SceneManager : MonoBehaviour
 {
-    // ó‘Ô
-    // ƒ^ƒCƒgƒ‹‰æ–ÊAƒƒCƒ“ƒV[ƒ“AƒCƒxƒ“ƒgAƒVƒ‡ƒbƒvAƒXƒPƒWƒ…[ƒ‹Œ‹‰ÊA10ƒ^[ƒ“Œã‚ÌED
+    // å„ã‚·ãƒ¼ãƒ³ã®çŠ¶æ…‹
+    // ã‚¿ã‚¤ãƒˆãƒ«ç”»é¢ã€ãƒ¡ã‚¤ãƒ³ã‚·ãƒ¼ãƒ³ã€ã‚¤ãƒ™ãƒ³ãƒˆã€ã‚·ãƒ§ãƒƒãƒ—ã€ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«çµæœã€10ã‚¿ãƒ¼ãƒ³å¾Œã®ED
     enum GameState
     {
         Title,
@@ -30,7 +30,7 @@ public class SceneManager : MonoBehaviour
     {
     }
 
-    //@ó‘Ô‚Ì•ÏX
+    //ã€€çŠ¶æ…‹ã®å¤‰æ›´
     public void ChangeState()
     {
 

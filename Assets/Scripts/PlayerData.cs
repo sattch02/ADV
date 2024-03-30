@@ -1,29 +1,30 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerData : MonoBehaviour
 {
-    // Šî–{“I‚ÈƒLƒƒƒ‰ƒXƒe[ƒ^ƒX
-    // ƒ^[ƒ“”AŠ‹àAUŒ‚A–hŒäA‘f‘‚³Aí—ÍAƒŒƒxƒ‹AŒoŒ±’l
+    // åŸºæœ¬çš„ãªã‚­ãƒ£ãƒ©ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹
+    // ã‚¿ãƒ¼ãƒ³æ•°ã€æ‰€æŒé‡‘ã€æ”»æ’ƒã€é˜²å¾¡ã€ç´ æ—©ã•ã€æˆ¦åŠ›ã€ãƒ¬ãƒ™ãƒ«ã€çµŒé¨“å€¤
+    // keyï¼šã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹åã€valueï¼šæ•°å€¤
     [SerializeField] private Dictionary<string, int> charaStatusList = new Dictionary<string, int>();
 
-    // ŠƒAƒCƒeƒ€ˆê——
-    // keyFƒAƒCƒeƒ€–¼AvalueFŠ”
+    // æ‰€æŒã‚¢ã‚¤ãƒ†ãƒ ä¸€è¦§
+    // keyï¼šã‚¢ã‚¤ãƒ†ãƒ åã€valueï¼šæ‰€æŒæ•°
     [SerializeField] private Dictionary<string, int> itemList = new Dictionary<string, int>();
 
-    // ‚¨“X‚ÌƒXƒe[ƒ^ƒXˆê——
-    // keyFƒXƒe[ƒ^ƒX–¼AvalueF”’l
+    // ãŠåº—ã®ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ä¸€è¦§
+    // keyï¼šã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹åã€valueï¼šæ•°å€¤
     [SerializeField] private Dictionary<string, int> shopStatusList = new Dictionary<string, int>();
 
     public void Awake()
     {
-        // ‚±‚±‚ÅƒvƒŒƒCƒ„ƒf[ƒ^‚Ìƒ[ƒhBƒf[ƒ^‚ª–³‚©‚Á‚½‚ç‰Šú‰»‚·‚éB
+        // ã“ã“ã§ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ‡ãƒ¼ã‚¿ã®ãƒ­ãƒ¼ãƒ‰ã€‚ãƒ‡ãƒ¼ã‚¿ãŒç„¡ã‹ã£ãŸã‚‰åˆæœŸåŒ–ã™ã‚‹ã€‚
 
         Init();
     }
     
-    // ƒvƒŒƒCƒ„[ƒf[ƒ^‚Ì‰Šú‰»
+    // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãƒ‡ãƒ¼ã‚¿ã®åˆæœŸåŒ–
     public void Init()
     {
 
@@ -41,7 +42,7 @@ public class PlayerData : MonoBehaviour
         
     }
 
-    // ‚±‚±‚ÅƒvƒŒƒCƒ„ƒf[ƒ^‚Ìƒ[ƒh
+    // ã“ã“ã§ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ‡ãƒ¼ã‚¿ã®ãƒ­ãƒ¼ãƒ‰
     public void playerDataLoad()
     {
 
