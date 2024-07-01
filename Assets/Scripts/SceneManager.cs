@@ -7,7 +7,7 @@ public class SceneManager : MonoBehaviour
 {
     // 各シーンの状態
     // タイトル画面、メインシーン、イベント、ショップ、スケジュール結果、10ターン後のED
-    enum GameState
+    public enum GameState
     {
         Title,
         Main,
@@ -17,7 +17,7 @@ public class SceneManager : MonoBehaviour
         Ending
     }
 
-    private GameState g_state;
+    [SerializeField] private GameState g_state;
 
     // Start is called before the first frame update
     public void Start()
@@ -28,11 +28,40 @@ public class SceneManager : MonoBehaviour
     // Update is called once per frame
     public void Update()
     {
+        switch(g_state)
+        {
+            case GameState.Title:
+                break;
+            case GameState.Main:
+                Debug.Log("MainScene------");
+                break;
+            case GameState.Event:
+                break;
+            case GameState.Shop:
+                break;
+            case GameState.Result:
+                break;
+            case GameState.Ending:
+                break;
+        }
     }
 
-    //　状態の変更
-    public void ChangeState()
+    // 状態の変更
+    public void ChangeState(int state)
     {
-
+        switch(state)
+        {
+            case 1:
+                g_state = GameState.Main;
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+        }
     }
 }
