@@ -1,15 +1,16 @@
+using MessagePack.Resolvers;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TitleButton : MonoBehaviour
 {
-    private SceneManager sceneManager;
+    private SceneController sceneController;
 
     // Start is called before the first frame update
     public void Start()
     {
-        sceneManager = GameObject.Find("SceneManager").GetComponent<SceneManager>();
+        sceneController = GameObject.Find("SceneController").GetComponent<SceneController>();
     }
 
     // Update is called once per frame
@@ -19,8 +20,7 @@ public class TitleButton : MonoBehaviour
 
     public void OnClickStart()
     {
-
-        sceneManager.ChangeState(1);
+        sceneController.ChangeState(SceneController.GameState.Main);
     }
 
     public void OnClickLoad()
