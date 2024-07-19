@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class SceneManager : MonoBehaviour
+public class SceneController : MonoBehaviour
 {
     // 各シーンの状態
     // タイトル画面、メインシーン、イベント、ショップ、スケジュール結果、10ターン後のED
@@ -47,20 +47,22 @@ public class SceneManager : MonoBehaviour
     }
 
     // 状態の変更
-    public void ChangeState(int state)
+    public void ChangeState(GameState state)
     {
         switch(state)
         {
-            case 1:
+            case GameState.Title:
+                break;
+            case GameState.Main:
                 g_state = GameState.Main;
                 break;
-            case 2:
+            case GameState.Event:
                 break;
-            case 3:
+            case GameState.Shop:
                 break;
-            case 4:
+            case GameState.Result:
                 break;
-            case 5:
+            case GameState.Ending:
                 break;
         }
     }
